@@ -18,3 +18,12 @@ const relogio = setInterval(function time() {
     minutos.textContent = mim
     segundos.textContent = s
 })
+
+const calendario = new Date;
+const dia = document.getElementById('dia');
+const mes = document.getElementById('mes');
+const ano = document.getElementById('ano');
+
+dia.textContent = calendario.getDate();
+mes.textContent = (calendario.getMonth() + 1);
+ano.textContent = calendario.getFullYear();

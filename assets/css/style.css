@@ -9,7 +9,9 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(180deg, navy, lightblue);
+    background-image: url("../image/relogio.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1400px 800px;
     display: flex;    
     justify-content: center;
     align-items: center;
@@ -67,6 +69,7 @@ body {
     /* sombra */
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
     font-size: 50px;
+    color: #fff;
 }
 
 #dia, #mes {
@@ -98,3 +101,4 @@ body {
     letter-spacing: 3px;
     font-size: 20px;
 }
+
