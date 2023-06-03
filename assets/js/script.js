@@ -23,15 +23,23 @@ const calendario = new Date;
 
 let textdia = calendario.getDate();
 if (textdia < 10) {
-    textdia = "0" + dia;
+    textdia = "0" + textdia;
 } 
 else {
-    textdia = dia;
+    textdia = textdia;
+}
+
+let textmes = (calendario.getMonth() + 1);
+if (textmes < 10) {
+    textmes = "0" + textmes;
+} 
+else {
+    textmes = textmes;
 }
 const dia = document.getElementById('dia');
 const mes = document.getElementById('mes');
 const ano = document.getElementById('ano');
 
 dia.textContent = textdia;
-mes.textContent = (calendario.getMonth() + 1);
+mes.textContent = textmes;
 ano.textContent = calendario.getFullYear();
