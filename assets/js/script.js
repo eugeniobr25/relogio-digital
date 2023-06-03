@@ -20,10 +20,18 @@ const relogio = setInterval(function time() {
 })
 
 const calendario = new Date;
+
+let textdia = calendario.getDate();
+if (textdia < 10) {
+    textdia = "0" + dia;
+} 
+else {
+    textdia = dia;
+}
 const dia = document.getElementById('dia');
 const mes = document.getElementById('mes');
 const ano = document.getElementById('ano');
 
-dia.textContent = calendario.getDate();
+dia.textContent = textdia;
 mes.textContent = (calendario.getMonth() + 1);
 ano.textContent = calendario.getFullYear();
